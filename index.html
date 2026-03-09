@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="#" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css">
+    <title>Webinance</title>
+  </head>
+  <body>
+    <div id="app">
+
+      <div id="dashboard-page">
+        <div class="balance-container">
+          <h2>Balance</h2>
+          <h1 class="physical-balance">PHP 130,000</h1>
+        </div>
+
+        <div id="dashboard-report">
+          <h3>Weekly Finance Report</h3><hr/>
+          <canvas id="palChart"></canvas>
+          <canvas id="catChart"></canvas>
+          <div>
+            <button id="cat-btn">Categories</button>
+            <button id="pal-btn">Profit and Loss</button>
+          </div>
+        </div>
+
+        <div id="dashboard-recents">
+          <h3>Recent Transactions</h3><hr/>
+
+          <ul id="dashboard-recent-content">
+          </ul>
+        </div>
+      </div>
+
+      <div id="transaction-page" style="display: none;">
+        <h4>Transaction History</h4>
+        <div>
+          <h3>Week,Month</h3><hr/>
+          <ul>
+            <li>
+              <h4>Transaction Number 1</h4>
+              <h5>Date of Transaction</h5>
+              <h3>Amount</h3>
+            </li>
+            <li>
+              <h4>Transaction Number 2</h4>
+              <h5>Date of Transaction</h5>
+              <h3>Amount</h3>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="profile-page" style="display: none;">
+        <div class="balance-container">
+          <h2>Physical Balance</h2>
+          <h1 class="physical-balance">PHP 170.00</h1>
+        </div>
+        <div class="balance-container">
+          <h2>Digital Balance</h2>
+          <h1>PHP 500.00</h1>
+        </div>
+        <div class="balance-container">
+          <h2>Savings Balance</h2>
+          <h1>PHP 120.00</h1>
+        </div>
+        <div>
+          <h3>Categoies</h3><hr/>
+          <ul>
+            <li>Category A</li>
+            <li>Category B</li>
+            <li>Category C</li>
+            <li>Category D</li>
+            <li>Category E</li>
+            <li>Category F</li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="settings-page" style="display: none;">
+        <div id="settings">
+          <h3>Settings</h3><hr/>
+          <button>Change Currency</button>
+          <div>
+            <label for="mon">Monday</label>
+            <input type="radio" name="start-of-week" id="mon">
+
+            <label for="sat">Saturday</label>
+            <input type="radio" name="start-of-week" id="sat">
+
+            <label for="sun">Sunday</label>
+            <input type="radio" name="start-of-week" id="sun">
+          </div>
+          <button>Apply</button>
+          <button>Delete All Data</button>
+        </div>
+        <div id="credits"></div>
+      </div>
+
+
+      <div id="nav-bar">
+        <button id="new-expense-btn">New Expenses</button>
+        <div>
+          <button id="dashboard-btn">Dashboard</button>
+          <button id="transaction-btn">Transaction</button>
+          <button id="profile-btn">Profile</button>
+          <button id="settings-btn">Settings</button>
+        </div>
+      </div>
+
+    </div>
+
+    <script type="module" src="/src/javascripts/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  </body>
+</html>
