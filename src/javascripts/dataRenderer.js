@@ -44,7 +44,7 @@ let user = {
         {
             id: 'tI2',
             title: 'Allowance',
-            date: '3/9/2026 | 6:00',
+            date: '3/11/2026 | 6:00',
             type: 'income',
             amount: 100
         }

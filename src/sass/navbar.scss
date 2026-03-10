@@ -1,0 +1,43 @@
+$base-black: rgb(25,25,25);
+$base-white: rgb(255, 255, 255);
+$base-blue: rgb(39, 39, 252);
+$base-red: rgb(252,39,39);
+
+#nav-bar {
+    width: 80vw;
+    padding: 20px 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba($base-black, 0.15);
+
+    position: fixed;
+    left: 6vw;
+    bottom: 2vh;
+    z-index: 1;
+
+    #new-expense-btn {
+        opacity: 1;
+        background-color: $base-red;
+        border-radius: 100%;
+    }
+
+    display: flex;
+    justify-content: space-around;
+    background-color: $base-white;
+
+
+    button {
+        opacity: 0.8;
+        background-color: $base-blue;
+        color: $base-white;
+
+        padding: 15px;
+        border: none;
+        border-radius: 100%;
+        scale: 1;
+    }
+    button:hover {
+        cursor: pointer;
+        opacity: 1;
+        transform: translateY(-5px);
+    }
+}

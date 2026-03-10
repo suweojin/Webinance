@@ -25,9 +25,17 @@ export function renderLineChart(id,object) {
             ]
         },
         options: {
+            legend: {
+                display: true,
+                position: 'right',
+                labels: {
+                    fontSize: 12
+                }
+            },
             title: {
                 display: true,
-                text: "Profit and Loss"
+                text: "Profit and Loss",
+                fontSize: 14
             }
         }
     })
@@ -48,9 +56,17 @@ export function renderDoughnutChart(id,object) {
             }]
         },
         options: {
+            legend: {
+                display: true,
+                position: 'right',
+                labels: {
+                    fontSize: 12
+                }
+            },
             title: {
                 display: true,
-                text: "Categories"
+                text: "Categories",
+                fontSize: 14
             }
         }
     })

@@ -4,23 +4,33 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="#" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./src/sass/style.scss">
     <title>Webinance</title>
   </head>
   <body>
     <div id="app">
 
       <div id="dashboard-page">
-        <div class="balance-container">
-          <h2>Balance</h2>
-          <h1 class="physical-balance">PHP 130,000</h1>
+        <div id="dashboard-balance">
+          <div>
+            <h2>Balance</h2>
+            <h1 class="physical-balance">PHP 130,000</h1>
+          </div>
+          <div>
+            <button id="new-income-btn">
+              <i class="fa-solid fa-wallet fa-lg"></i>
+            </button>
+          </div>
         </div>
 
         <div id="dashboard-report">
-          <h3>Weekly Finance Report</h3><hr/>
+          <div>
+            <h3>Weekly Finance Report</h3><hr/>
+          </div>
           <canvas id="palChart"></canvas>
           <canvas id="catChart"></canvas>
-          <div>
+          <div id="chart-button-container">
             <button id="cat-btn">Categories</button>
             <button id="pal-btn">Profit and Loss</button>
           </div>
@@ -54,15 +64,15 @@
       </div>
 
       <div id="profile-page" style="display: none;">
-        <div class="balance-container">
+        <div class="profile-balance">
           <h2>Physical Balance</h2>
           <h1 class="physical-balance">PHP 170.00</h1>
         </div>
-        <div class="balance-container">
+        <div class="profile-balance">
           <h2>Digital Balance</h2>
           <h1>PHP 500.00</h1>
         </div>
-        <div class="balance-container">
+        <div class="profile-balance">
           <h2>Savings Balance</h2>
           <h1>PHP 120.00</h1>
         </div>
@@ -101,13 +111,23 @@
 
 
       <div id="nav-bar">
-        <button id="new-expense-btn">New Expenses</button>
-        <div>
-          <button id="dashboard-btn">Dashboard</button>
-          <button id="transaction-btn">Transaction</button>
-          <button id="profile-btn">Profile</button>
-          <button id="settings-btn">Settings</button>
-        </div>
+        <button id="dashboard-btn">
+          <i class="fa-solid fa-house fa-lg"></i>
+        </button>
+        <button id="transaction-btn">
+          <i class="fa-solid fa-rectangle-list fa-lg"></i>
+        </button>
+
+        <button id="new-expense-btn">
+          <i class="fa-solid fa-cart-plus fa-lg"></i>
+        </button>
+
+        <button id="profile-btn">
+          <i class="fa-solid fa-user fa-lg"></i>
+        </button>
+        <button id="settings-btn">
+          <i class="fa-solid fa-gear fa-lg"></i>
+        </button>
       </div>
 
     </div>

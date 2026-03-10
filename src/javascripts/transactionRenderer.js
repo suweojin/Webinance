@@ -9,14 +9,17 @@ function createNewRecordItem(parent,currency,data) {
     
     let header4 = document.createElement('h4');
     header4.innerText = data.title;
+    let childContainer = document.createElement('div');
+
     let header5 = document.createElement('h5');
     header5.innerText = data.date;
     let header3 = document.createElement('h3');
     header3.innerText = data.amount;
 
     parentContainer.appendChild(newRecordContainer);
-    newRecordContainer.appendChild(header4);
-    newRecordContainer.appendChild(header5);
+    childContainer.appendChild(header4);
+    childContainer.appendChild(header5);
+    newRecordContainer.appendChild(childContainer);
     newRecordContainer.appendChild(header3);
 }
 

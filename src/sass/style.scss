@@ -1,0 +1,30 @@
+@import url('./navbar.scss');
+@import url('./dashboard.scss');
+
+$base-black: rgb(25,25,25);
+
+%container-style {
+    color: $base-black;
+    box-shadow: 0 0 10px rgba($base-black, 0.25);
+    position: relative;
+
+    margin: 20px 20px;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+    color: $base-black;
+}
+
+* {
+    transition: 100ms;
+    margin: 0;
+    padding: 0;
+}
+
+#app {
+    position: relative;
+    margin-bottom: 150px;
+}
