@@ -3,7 +3,7 @@ $base-white: rgb(255, 255, 255);
 $base-blue: rgb(39, 39, 252);
 $base-red: rgb(252,39,39);
 
-@use './style.scss';
+@use 'style.scss';
 
 #dashboard-balance {
     @extend %container-style;
