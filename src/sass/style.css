@@ -1,0 +1,17 @@
+@import url("navbar.scss");
+@import url("dashboard.scss");
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(25, 25, 25);
+}
+
+* {
+  transition: 100ms;
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  position: relative;
+  margin-bottom: 150px;
+}/*# sourceMappingURL=style.css.map */
